@@ -5,6 +5,7 @@
 
 @mixin stroke_text {
    color: transparent;
+   text-transform: uppercase;
    -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: $color_white;
 }

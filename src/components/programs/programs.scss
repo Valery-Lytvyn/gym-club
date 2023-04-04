@@ -1,0 +1,48 @@
+@import '../../assets/scss_styles/global-imports';
+
+.programs {
+   .programsTitle {
+      @include flex-center;
+      font-size: 4rem;
+      font-weight: 700;
+      font-style: italic;
+      text-transform: uppercase;
+      gap: 5rem;
+
+   }
+
+   .programCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background: $color_card_bg;
+      height: 20rem;
+
+      &:hover {
+         cursor: pointer;
+         background: $gradient;
+      }
+
+      .cardIcon {
+         font-size: 2.5rem;
+      }
+
+      .cardBody {
+         display: flex;
+         flex-direction: column;
+         height: 6rem;
+
+         .cardTitle {
+            font-size: 1.125rem;
+            font-weight: 700;
+         }
+      }
+
+      .cardLink {
+         font-size: 1.125rem;
+         font-weight: 700;
+         display: flex;
+         gap: 1rem;
+      }
+   }
+}

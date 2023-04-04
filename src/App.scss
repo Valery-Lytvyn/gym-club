@@ -5,6 +5,7 @@
    // mix-blend-mode: overlay;
    background-color: $color_app_color;
    font-family: $font_body;
+   color: $color_white;
 
    .strokeText {
       @include stroke_text;
