@@ -1,0 +1,184 @@
+@import '../../assets/scss_styles/global-imports';
+
+.header {
+   color: $color_white;
+
+   .animatedLabel {
+      background-color: $color_dark_gray;
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      border-radius: 4rem;
+      position: relative;
+
+
+      .labelText {
+         text-transform: uppercase;
+         font-weight: 600;
+         font-size: 1.3rem;
+         letter-spacing: 1px;
+         z-index: 10;
+      }
+
+      .labelMark {
+         position: absolute;
+         left: 8px;
+         width: 28%;
+         height: 80%;
+         border-radius: 3rem;
+         z-index: 1;
+         background-color: $color_orange;
+      }
+   }
+
+   .headerTitle {
+      h1 {
+         text-transform: uppercase;
+         font-size: 4.5rem;
+         font-weight: 700;
+         line-height: 1.4;
+      }
+   }
+}
+
+.headerSubtitle {
+   letter-spacing: 1px;
+   font-weight: 200;
+}
+
+.statisticsTable {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+
+   .statisticCell {
+      display: flex;
+      flex-direction: column;
+
+      .statisticQuantity {
+         font-size: 2rem;
+      }
+
+      .statisticTitle {
+         text-transform: uppercase;
+         color: $color_gray;
+      }
+   }
+}
+
+
+.btnWrap {
+   display: flex;
+   gap: 2rem;
+
+   .startedBtn {
+      background: $color_orange;
+   }
+
+   .moreBtn {
+      background: transparent;
+      @include border(2px, $color_orange);
+   }
+}
+
+.orangePart {
+   background-color: $color_orange;
+   height: 100%;
+   position: relative;
+
+   .joinBtnWrap {
+      @include size_element(3rem, 100%);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 6rem;
+
+      .joinBtn {
+         background: $color_dark_gray;
+         color: $color_white;
+         @include border(2px, $color_white);
+      }
+   }
+
+   .heartRateWrap {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: $color_card_bg;
+      border-radius: 0.6rem;
+
+      .heart {
+         color: $color_orange;
+         font-size: 2.7rem;
+      }
+
+      .heartRateText {
+         color: $color_gray;
+         font-size: 1.1rem;
+         font-weight: 600;
+      }
+
+      .heartRateValue {
+         color: $color_white;
+         font-size: 1.7rem;
+      }
+   }
+
+   .athleteImg {
+      position: absolute;
+      top: 13rem;
+      right: 25rem;
+      width: 23rem;
+      z-index: 2;
+
+      & img {
+         width: 100%;
+      }
+   }
+
+   .athleteBgImg {
+      position: absolute;
+      top: 8rem;
+      right: 38rem;
+      width: 15rem;
+      transform: rotate(-10deg);
+
+      & img {
+         width: 100%;
+      }
+   }
+
+   .caloriesCell {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      background-color: $color_card_bg;
+      border-radius: 0.3125rem;
+      top: 12rem;
+      right: 34rem;
+      width: fit-content;
+
+      .graph {
+         color: $color_orange;
+         font-size: 3.2rem;
+      }
+
+      .caloriesDescription {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+
+         .caloriesTitle {
+            color: $color_gray;
+         }
+
+         .caloriesQuantity {
+            color: $color_white;
+            font-size: 1.8rem;
+         }
+      }
+   }
+}

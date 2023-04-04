@@ -1,0 +1,14 @@
+@import '../../assets/scss_styles/global-imports';
+
+.button {
+   border: none;
+   cursor: pointer;
+   @include flex-center;
+   gap: 1rem;
+   font-weight: 700;
+   color: $color_white;
+
+   &:hover {
+      transition: 500ms;
+   }
+}
