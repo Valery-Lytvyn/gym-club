@@ -1,0 +1,53 @@
+@import '../../assets/scss_styles/global-imports';
+
+.reasons {
+   text-transform: uppercase;
+
+   & img {
+      width: 100%;
+      height: auto;
+   }
+
+   .reasonsDescription {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .reasonsSubTitle {
+         font-size: 1.125rem;
+         font-weight: 500;
+         color: $color_orange;
+      }
+
+      .reasonsTitle {
+         font-size: 4rem;
+         font-weight: 700;
+      }
+
+      .reasonItem {
+         list-style: none;
+         font-weight: 600;
+         display: flex;
+         align-items: center;
+
+         .reasonMark {
+            font-size: 2rem;
+            line-height: 2rem;
+            color: $color_orange;
+         }
+      }
+
+      .partners {
+         font-size: 1.3rem;
+         font-weight: 600;
+      }
+
+      .partnersLogo {
+         display: flex;
+
+         .sportLogo {
+            font-size: 2.5rem;
+         }
+      }
+   }
+}

@@ -1,7 +1,9 @@
 import Header from "./components/header/Header";
+import Programs from "./components/programs/Programs";
+import Reasons from "./components/reasons/Reasons";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
-import Programs from "./components/programs/Programs";
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <div className="container-fluid p-0 m-0">
         <Header />
         <Programs />
+        <Reasons />
       </div>
 
     </div>
