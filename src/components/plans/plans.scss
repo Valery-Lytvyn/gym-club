@@ -10,72 +10,83 @@
       gap: 1rem;
    }
 
-
-
-   .planCard {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+   .planCardWrap {
       background: $color_card_bg;
       height: 30rem;
 
-      .planIcon {
-         font-size: 2rem;
-         color: $color_orange;
-      }
+      @include flex-center;
 
-      .planTitle {
-         text-transform: uppercase;
-         font-size: 1.2rem;
-         font-weight: 600;
-      }
-
-      .planPrice {
-         font-size: 3rem;
-         font-weight: 700;
-      }
-
-      .planList {
+      .planCard {
          display: flex;
          flex-direction: column;
-         justify-content: center;
-
-         .planListItem {
-            list-style: none;
-            display: flex;
-            align-items: center;
-
-            .planMark {
-               font-size: 1.5rem;
-               color: $color_orange;
-            }
-         }
-      }
-
-      .joinBtn {
-         background: $color_dark_gray;
-         color: $color_white;
-         @include border(2px, $color_white);
-         width: 75%;
-         align-self: center;
-      }
-   }
-
-   .col-4:nth-child(2) {
-      .planCard {
-         background: $gradient;
+         justify-content: space-around;
+         height: 30rem;
 
          .planIcon {
-            color: $color_white;
+            font-size: 2rem;
+            color: $color_orange;
+         }
+
+         .planTitle {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 600;
+         }
+
+         .planPrice {
+            font-size: 3rem;
+            font-weight: 700;
+         }
+
+         .planList {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .planListItem {
+               list-style: none;
+               display: flex;
+               align-items: center;
+
+               .planMark {
+                  font-size: 1.5rem;
+                  color: $color_orange;
+               }
+            }
          }
 
          .joinBtn {
-
-            color: $color_orange;
-            @include border(2px, $color_white);
+            background: $color_dark_gray;
+            color: $color_white;
+            @include border($color_white);
             width: 75%;
             align-self: center;
          }
       }
    }
+
+   .col-4:nth-child(2) {
+      .planCardWrap {
+         height: 33rem;
+         background: $gradient;
+
+
+         .planIcon {
+            color: $color_white;
+         }
+
+         .planListItem {
+            .planMark {
+               color: $color_white;
+            }
+         }
+
+         .joinBtn {
+            color: $color_orange;
+            width: 75%;
+            align-self: center;
+         }
+      }
+   }
+
 }

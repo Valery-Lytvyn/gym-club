@@ -1,0 +1,60 @@
+@import '../../assets/scss_styles/global-imports';
+
+.subscription {
+
+   .subscriptionBorder {
+      width: 10%;
+      background: $color_orange;
+      height: 2px;
+   }
+
+   .subscriptionTitle {
+      font-size: 4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+   }
+
+   .subscriptionFormWrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      @include size_element($h, $w);
+   }
+
+   .subscriptionForm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      background: $color_gray;
+      padding: 20px;
+      width: 100%;
+
+      .subscriptionInput {
+         height: 3rem;
+         min-width: 20rem;
+         background: transparent;
+         border: none;
+
+         &::placeholder {
+            color: $color_white;
+         }
+
+         &:focus {
+            outline: none;
+            color: $color_white;
+         }
+      }
+
+      .subscriptionBtn {
+         height: 3rem;
+         width: fit-content;
+         background: $color_orange;
+
+      }
+   }
+}

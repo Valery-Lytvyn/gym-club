@@ -5,6 +5,7 @@ import Reasons from "./components/reasons/Reasons";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import Feedback from "./components/feedback/Feedback";
+import Subscription from "./components/subscription/Subscription";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Reasons />
         <Plans />
         <Feedback />
+        <Subscription />
       </div>
     </div>
   );

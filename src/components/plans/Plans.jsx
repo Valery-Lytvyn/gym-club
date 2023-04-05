@@ -48,25 +48,27 @@ function Plans() {
             <span className='strokeText' >now with us </span>
          </div>
          <div className='container'>
-            <div className='row'>
+            <div className='row align-item-center'>
                {plansData.map(item => (
-                  <div className='col-4' key={item.title}>
-                     <div className='planCard p-3'>
-                        <div className='planIcon'>{item.icon}</div>
-                        <div className='planTitle'>{item.title}</div>
-                        <div className='planPrice'>{item.price}</div>
-                        <ul className='planList p-0 m-0'>
-                           {item.planList.map((item, index) => (
-                              <li className='planListItem' key={index}>
-                                 <span className='planMark pe-3'><BsCheck2Circle /></span>
-                                 {item}
-                              </li>
-                           ))}
-                        </ul>
-                        <div className='descriptionLink py-2'>View more benefits
-                           <span className='linkArrow ps-2'><FiArrowRight /></span>
+                  <div className='col-4 d-flex align-items-center justify-content-center' key={item.title}>
+                     <div className='planCardWrap w-100'>
+                        <div className='planCard p-3'>
+                           <div className='planIcon'>{item.icon}</div>
+                           <div className='planTitle'>{item.title}</div>
+                           <div className='planPrice'>{item.price}</div>
+                           <ul className='planList p-0 m-0'>
+                              {item.planList.map((item, index) => (
+                                 <li className='planListItem' key={index}>
+                                    <span className='planMark pe-3'><BsCheck2Circle /></span>
+                                    {item}
+                                 </li>
+                              ))}
+                           </ul>
+                           <div className='descriptionLink py-2'>View more benefits
+                              <span className='linkArrow ps-2'><FiArrowRight /></span>
+                           </div>
+                           <Button className='joinBtn' text='Join now' />
                         </div>
-                        <Button className='joinBtn' text='Join now' />
                      </div>
                   </div>
                ))}
