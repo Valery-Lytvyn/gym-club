@@ -34,8 +34,8 @@ function Programs() {
       }
    ]
    return (
-      <section className='programs px-4' id='programs'>
-         <h2 className='programsTitle p-5'>
+      <section className='programs p-4 my-5' id='programs'>
+         <h2 className='programsTitle py-5'>
             <span className='strokeText'>explore our</span> programs <span className='strokeText'> to shape you</span>
          </h2>
          <div className='row'>

@@ -3,11 +3,6 @@
 .reasons {
    text-transform: uppercase;
 
-   & img {
-      width: 100%;
-      height: auto;
-   }
-
    .reasonsDescription {
       display: flex;
       flex-direction: column;

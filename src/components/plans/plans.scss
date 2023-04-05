@@ -1,0 +1,81 @@
+@import '../../assets/scss_styles/global-imports';
+
+.plans {
+   .plansTitle {
+      @include flex-center;
+      font-size: 4rem;
+      font-weight: 700;
+      font-style: italic;
+      text-transform: uppercase;
+      gap: 1rem;
+   }
+
+
+
+   .planCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background: $color_card_bg;
+      height: 30rem;
+
+      .planIcon {
+         font-size: 2rem;
+         color: $color_orange;
+      }
+
+      .planTitle {
+         text-transform: uppercase;
+         font-size: 1.2rem;
+         font-weight: 600;
+      }
+
+      .planPrice {
+         font-size: 3rem;
+         font-weight: 700;
+      }
+
+      .planList {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+
+         .planListItem {
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            .planMark {
+               font-size: 1.5rem;
+               color: $color_orange;
+            }
+         }
+      }
+
+      .joinBtn {
+         background: $color_dark_gray;
+         color: $color_white;
+         @include border(2px, $color_white);
+         width: 75%;
+         align-self: center;
+      }
+   }
+
+   .col-4:nth-child(2) {
+      .planCard {
+         background: $gradient;
+
+         .planIcon {
+            color: $color_white;
+         }
+
+         .joinBtn {
+
+            color: $color_orange;
+            @include border(2px, $color_white);
+            width: 75%;
+            align-self: center;
+         }
+      }
+   }
+}

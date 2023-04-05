@@ -10,10 +10,10 @@ import { SiNewbalance, SiAdidas, SiNike } from 'react-icons/si';
 
 function Reasons() {
    const reasonsList = [
-      "expert trainers",
-      "train smarter and faster than before",
-      "free program for new members",
-      "trusted partners"
+      'expert trainers',
+      'train smarter and faster than before',
+      'free program for new members',
+      'trusted partners'
    ]
 
    const partnersLogo = [
@@ -22,28 +22,28 @@ function Reasons() {
       <SiNike />
    ]
    return (
-      <section className='reasons'>
-         <div className="row p-0 ps-4 py-5">
-            <div className="col-6 ">
-               <div className="row">
-                  <div className="col-4 p-0 m-0">
-                     <img className='w-100 h-100 p-2 pe-0' src={reasonImg_1} alt="athlete" />
+      <section className='reasons' id='reasons'>
+         <div className='row p-0 ps-4 py-5'>
+            <div className='col-6 '>
+               <div className='row'>
+                  <div className='col-4 p-0 m-0'>
+                     <img className='w-100 h-100 p-2 pe-0' src={reasonImg_1} alt='athlete' />
                   </div>
-                  <div className="col-8 m-0 p-0">
-                     <div className="row m-0 p-0 h-100">
-                        <div className="col-12"><img className='w-100 h-100 p-2' src={reasonImg_2} alt="athlete" /></div>
-                        <div className="col-6 "><img className='w-100 h-100 p-2 pe-0' src={reasonImg_3} alt="athlete" /></div>
-                        <div className="col-6 "><img className='w-100 h-100 p-2 ps-0' src={reasonImg_4} alt="athlete" /></div>
+                  <div className='col-8 m-0 p-0'>
+                     <div className='row m-0 p-0 h-100'>
+                        <div className='col-12'><img className='w-100 h-100 p-2' src={reasonImg_2} alt='athlete' /></div>
+                        <div className='col-6 '><img className='w-100 h-100 p-2 pe-0' src={reasonImg_3} alt='athlete' /></div>
+                        <div className='col-6 '><img className='w-100 h-100 p-2 ps-0' src={reasonImg_4} alt='athlete' /></div>
                      </div>
                   </div>
                </div>
             </div>
-            <div className="col-6">
-               <div className="reasonsDescription h-100">
-                  <div className="reasonsSubTitle">
+            <div className='col-6'>
+               <div className='reasonsDescription h-100'>
+                  <div className='reasonsSubTitle'>
                      some reasons
                   </div>
-                  <div className="reasonsTitle">
+                  <div className='reasonsTitle'>
                      <span className='strokeText' >WHY </span> CHOOSE US?
                   </div>
                   {reasonsList.map((item, index) => (
@@ -52,10 +52,10 @@ function Reasons() {
                         {item}
                      </li>
                   ))}
-                  <div className="partners py-2">
+                  <div className='partners py-2'>
                      our partners
                   </div>
-                  <div className="partnersLogo">
+                  <div className='partnersLogo'>
                      {partnersLogo.map((item, index) => (
                         <span className='sportLogo pe-4' key={index}>
                            {item}
