@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import Feedback from "./components/feedback/Feedback";
 import Subscription from "./components/subscription/Subscription";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Plans />
         <Feedback />
         <Subscription />
+        <Footer />
       </div>
     </div>
   );
