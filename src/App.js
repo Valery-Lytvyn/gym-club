@@ -4,6 +4,7 @@ import Plans from "./components/plans/Plans";
 import Reasons from "./components/reasons/Reasons";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
+import Feedback from "./components/feedback/Feedback";
 
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
         <Programs />
         <Reasons />
         <Plans />
+        <Feedback />
       </div>
-
     </div>
   );
 }

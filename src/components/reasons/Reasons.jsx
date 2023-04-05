@@ -1,9 +1,9 @@
 import React from 'react';
 import './reasons.scss';
-import reasonImg_1 from '../../assets/images/reasons_img_1.png';
-import reasonImg_2 from '../../assets/images/reasons_img_2.png';
-import reasonImg_3 from '../../assets/images/reasons_img_3.png';
-import reasonImg_4 from '../../assets/images/reasons_img_4.png';
+import reasonImg_1 from '../../assets/images/reasons_img_1.webp';
+import reasonImg_2 from '../../assets/images/reasons_img_2.webp';
+import reasonImg_3 from '../../assets/images/reasons_img_3.webp';
+import reasonImg_4 from '../../assets/images/reasons_img_4.webp';
 import { BsCheck2Circle } from 'react-icons/bs';
 import { SiNewbalance, SiAdidas, SiNike } from 'react-icons/si';
 

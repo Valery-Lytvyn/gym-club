@@ -1,0 +1,74 @@
+@import '../../assets/scss_styles/global-imports';
+
+.feedback {
+
+   .feedbackDescription {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .feedbackSubTitle {
+         font-size: 1.125rem;
+         font-weight: 500;
+         color: $color_orange;
+         text-transform: uppercase;
+      }
+
+      .feedbackTitle {
+         font-size: 4rem;
+         font-weight: 700;
+      }
+
+      .feedbackAuthor {
+         font-size: 1.125rem;
+         font-weight: 500;
+         text-transform: uppercase;
+
+         .authorName {
+            color: $color_orange;
+         }
+      }
+   }
+
+   .arrows {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 3rem;
+      height: 100%;
+      font-size: 2rem;
+
+      .arrowPrev :hover,
+      .arrowNext :hover {
+         cursor: pointer;
+         color: $color_orange;
+      }
+   }
+
+   .authorPhotoWrap {
+      position: relative;
+      @include size_element(23rem, 18.75rem);
+      @include border($color_orange);
+
+
+      .backgroundPhoto {
+         position: absolute;
+         top: 30px;
+         left: 30px;
+         @include size_element(23rem, 18.75rem);
+         background: $gradient;
+      }
+
+      .authorPhoto {
+         position: absolute;
+         top: 15px;
+         left: 15px;
+         @include size_element(23rem, 18.75rem);
+
+         & img {
+            @include size_element($h, $w);
+         }
+      }
+   }
+}
