@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gym-club/static/css/main.a9020511.css",
+    "main.js": "/gym-club/static/js/main.6e1a2fe6.js",
+    "static/media/hero_image.png": "/gym-club/static/media/hero_image.813257bf6891a689877f.png",
+    "static/media/author_photo_2.webp": "/gym-club/static/media/author_photo_2.4ce35dd8c49d6a78f3d9.webp",
+    "static/media/author_photo_3.webp": "/gym-club/static/media/author_photo_3.395f24522d173c9284f8.webp",
+    "static/media/reasons_img_2.webp": "/gym-club/static/media/reasons_img_2.bd582f70d481058202e1.webp",
+    "static/media/hero_image_back.png": "/gym-club/static/media/hero_image_back.9f54bfba33048f4ca688.png",
+    "static/media/reasons_img_1.webp": "/gym-club/static/media/reasons_img_1.cf9ea6a7dcfc78bd426e.webp",
+    "static/media/reasons_img_3.webp": "/gym-club/static/media/reasons_img_3.eaeb4126a726efdef2b4.webp",
+    "static/media/author_photo_1.webp": "/gym-club/static/media/author_photo_1.9234e11a79aca5b0b853.webp",
+    "static/media/reasons_img_4.webp": "/gym-club/static/media/reasons_img_4.9f0c1884477610a5efd6.webp",
+    "index.html": "/gym-club/index.html",
+    "main.a9020511.css.map": "/gym-club/static/css/main.a9020511.css.map",
+    "main.6e1a2fe6.js.map": "/gym-club/static/js/main.6e1a2fe6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9020511.css",
+    "static/js/main.6e1a2fe6.js"
+  ]
+}
